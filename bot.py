@@ -9,9 +9,9 @@ from telegram.ext import Application, MessageHandler, ContextTypes, filters
 # =====================
 # KEYS (abhi empty rahenge)
 # =====================
+TELEGRAM_TOKEN = "8632052379:AAH95t70Ib3AHuZnQCQdISYFf0RmLVXpP0Y"
+GEMINI_API_KEY = "AQ.Ab8RN6LOR2a3K7QWLxoUzUM3kFl0jPNXjqh3u3odlHjL4Vzgeg"
 
-TELEGRAM_TOKEN = os.getenv("8632052379:AAH95t70Ib3AHuZnQCQdISYFf0RmLVXpP0Y")
-GEMINI_API_KEY = os.getenv("AQ.Ab8RN6LOR2a3K7QWLxoUzUM3kFl0jPNXjqh3u3odlHjL4Vzgeg")
 
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel("gemini-1.5-flash")
